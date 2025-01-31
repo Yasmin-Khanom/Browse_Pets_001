@@ -12,35 +12,39 @@
 <script src="https://cdn.tailwindcss.com"></script>
 
 <style>
-    .font-adlam {
+    .adlam {
   font-family: "ADLaM Display", serif;
+  font-weight: 400;
 }
-.font-sora {
+
+.sora {
   font-family: "Sora", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
 }
 </style>
 </head>
 <body>
-    <header class="md:container mx-auto">
+    <header>
         <!-- navbar  -->
-         <nav>
+         <nav class="container">
             <div class="navbar bg-[#FFF9F4]">
                 <div class="navbar-start"> 
                     <img class="size-12" src="images/logo-header.png" alt=""> 
-                  <a class="btn btn-ghost text-xl ml-px font-sora">Browse<span class="text-[#FFDC26]">4</span>Pets</a>
+                  <a class="text-xl ml-px sora">Browse<span class="text-[#FFDC26]">4</span>Pets</a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
-                  <ul class="menu menu-horizontal px-1">
+                  <ul class="menu menu-horizontal px-1 text-gray-900 sora">
                     <li><a>Find a pet</a></li>
                     <li><a >Breeds</a></li>
                     <li><a>Contact us</a></li>
                   </ul>
                 </div>
-                <div class="navbar-end sm:hidden">
+                <div class="navbar-end">
                     <i class="fa-regular fa-bell mx-2"></i>
                     <i class="fa-solid fa-magnifying-glass"></i>
-                    <button class="btn btn-outline border-[#FFDC26] hover:bg-[#FFDC26] mx-2">Log In</button>
-                  <a class="btn bg-[#FFDC26] hover:bg-base-300">Button</a>
+                    <button class="sora btn btn-outline border-[#FFDC26] hover:bg-[#FFDC26] mx-2">Log In</button>
+                  <a class="sora btn bg-[#FFDC26] hover:bg-base-300">Register</a>
                 </div>
                 <div class="dropdown">
                     <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -67,8 +71,89 @@
                   </div>
               </div>
          </nav>
-    </header>
-    <main></main>
-    <footer></footer>
+         <!-- banner section  -->
+         <section class="w-full px-16 lg:28 lg:flex pt-10 mb-20">
+          <!-- text content  -->
+           <div>
+          <h1 class="adlam text-5xl md:text-7xl font-bold">Pamper Your Pet, Because They Deserve the Bes</h1> 
+              <br>
+          <p class="sora text-gray-500 w-3/4">Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and make tails wag with joy!</p>
+          <br>
+          <button class="sora bg-[#FFDC26] hover:bg-[#FFDC26] px-5 py-3 rounded-lg text-black font-bold">Find a pet</button>       
+           </div>
+           <!-- img content  -->
+            <div class="relative">
+              <!-- image  -->
+               <div>
+                  <img class="w-full" src="images/cat-big.png" alt="">
+                </div>
+                </div>
+    </section>
+  </header>
+    <main>
+      <section class="py-8 ml-5 lg:py-24">
+        <!-- Title  -->
+         <div class="mb-8">
+            <h1 class="adlam text-3xl md:text-4xl font-bold mb-5">Browse By Categories</h1>
+         </div>
+         <!-- grid cards  -->
+          <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 text-center">
+            <!-- pet card  -->
+            <div class="p-10 m-5 rounded-lg shadow-md bg-[#F9DF8A] overflow-hidden">
+              <img class="p-3 m-2 mx-auto rounded-full bg-white" src="images/dog-cartoon.png" alt="">
+              <div class="p-4">
+                  <h2 class="adlam font-bold text-xl">Dog</h2>
+              <p class="sora text-gray-600">3 items</p>
+              </div>
+          </div>
+          <!-- pet card  -->
+          <div class="p-10 m-5 rounded-lg shadow-md bg-[#F9DF8A] overflow-hidden">
+            <img class="p-3 m-2 mx-auto rounded-full bg-white" src="images/fish-cartoon.png" alt="">
+            <div class="p-4">
+                <h2 class="adlam font-bold text-xl">Fish</h2>
+            <p class="sora text-gray-600">3 items</p>
+            </div>
+        </div>
+             <!-- pet card  -->
+          <div class="p-10 m-5 rounded-lg shadow-md bg-[#F9DF8A] overflow-hidden">
+            <img class="p-3 m-2 mx-auto rounded-full bg-white"src="images/cat-cartoon.png" alt="">
+            <div class="p-4">
+                <h2 class="adlam font-bold text-xl">Cat</h2>
+            <p class="sora text-gray-600">3 items</p>
+            </div>
+        </div>
+         <!-- pet card  -->
+         <div class="p-10 m-5 rounded-lg shadow-md bg-[#F9DF8A] overflow-hidden">
+          <img class="p-3 m-2 mx-auto rounded-full bg-white" src="images/bird-cartoon.png" alt="">
+          <div class="p-4">
+              <h2 class="adlam font-bold text-xl">Birds</h2>
+          <p class="sora text-gray-600">3 items</p>
+          </div>
+      </div>
+       <!-- pet card  -->
+       <div class="p-10 m-5 rounded-lg shadow-md bg-[#F9DF8A] overflow-hidden">
+        <img class="p-3 m-2 mx-auto rounded-full bg-white"src="images/mouse-cartoon.png" alt="">
+        <div class="p-4">
+            <h2 class="adlam font-bold text-xl">Small pet</h2>
+        <p class="sora text-gray-600">3 items</p>
+        </div>
+    </div>
+     <!-- pet card  -->
+     <div class="p-10 m-5 rounded-lg shadow-md bg-[#F9DF8A] overflow-hidden">
+      <img class="p-3 m-2 mx-auto rounded-full bg-white"src="images/rabbit-cartoon.png" alt="">
+      <div class="p-4">
+          <h2 class="adlam font-bold text-xl">Rabit</h2>
+      <p class="sora text-gray-600">3 items</p>
+      </div>
+  </div>
+          </div>   
+      </section>
+      <!-- pet products -->
+      
+
+      <!-- Everyday section  -->
+       
+    </main>
+    
 </body>
 </html>
